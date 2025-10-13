@@ -10,7 +10,7 @@ export default function Home() {
 
             <div className="relative z-10 text-center p-4">
                <h1 className="text-5xl font-extrabold mb-4">
-                  Sarraf Buğday İnşaat
+                  Alpaslan Buğday İnşaat
                </h1>
                <p className="text-xl">Hayallerinizi İnşa Ediyoruz</p>
             </div>
@@ -20,7 +20,7 @@ export default function Home() {
                src={
                   "https://lh3.googleusercontent.com/aida-public/AB6AXuBSnPdWS5_zNixyucU8jBAWhpDE39D6armVzF1-FDSDup8jgBzeVd1bIevNzsPuca_IDOBGXXFyAwvZ2uNxho4aUVFo02FkwKxC0ReOOOxaZUJF_Z-eccYfXYcF0DlMq8oXKUzy4cNSXCLcTVTNeZpc9BLQsOBWDdEjj6mv22XyzYUOGcxbWfAzoFaWIX78sJaygHXCFc63_m-oW1DtFpQbBtjppWa80x7gf0oUhsjPFuJUNPQwsJApcNZbCg59RUXwPPAglHsqCq8"
                }
-               alt="Sarraf Buğday İnşaat Banner"
+               alt="Alpaslan Buğday İnşaat Banner"
                className="w-full h-96 rounded-lg shadow-md"
                loading="eager"
             />
@@ -58,10 +58,10 @@ export default function Home() {
          </div>
          <div className="my-8 flex flex-col gap-4 text-center">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
-               Sarraf Buğday İnşaat
+               Alpaslan Buğday İnşaat
             </h2>
             <p class="text-lg font-normal text-gray-700 dark:text-gray-400">
-               Sarraf Buğday İnşaat, inşaat sektöründe yenilikçi ve kaliteli
+               Alpaslan Buğday İnşaat, inşaat sektöründe yenilikçi ve kaliteli
                projeler geliştiren lider bir firmadır. Müşteri memnuniyetini ön
                planda tutarak, modern yaşam alanları yaratmayı hedefliyoruz.
             </p>
@@ -75,7 +75,7 @@ export default function Home() {
                      key={`project-${i}`}>
                      <Image
                         src={`https://lipsum.app/random/1600x900?random=${i}`}
-                        alt="Sarraf Buğday İnşaat Logo"
+                        alt="Alpaslan Buğday İnşaat Logo"
                         className="!w-80 object-cover rounded"
                         loading="lazy"
                         // fill
