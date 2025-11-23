@@ -7,7 +7,7 @@
 @layer base {
    /* Custom global styles can be added here */
    html {
-      @apply text-gray-900 bg-gray-200 scroll-smooth;
+      @apply text-gray-900 bg-gray-100 scroll-smooth;
    }
 
    html,

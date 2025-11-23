@@ -14,9 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-   title: "Sarraf Buğday İnşaat ",
-   description:
-      "Sarraf Buğday İnşaat - Kaliteli ve Güvenilir İnşaat Hizmetleri",
+   title: {
+      default: "Alpaslan Buğday İnşaat",
+      template: "%s | Alpaslan Buğday İnşaat",
+   },
+   description: {
+      default:
+         "Alpaslan Buğday İnşaat - Kalite, Güven ve Yenilikçilikle Geleceği İnşa Ediyoruz.",
+   },
+      
    icons: {
       icon: "/favicon.ico",
    },
