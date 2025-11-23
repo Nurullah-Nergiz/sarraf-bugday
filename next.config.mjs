@@ -2,7 +2,9 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ['lipsum.app'],
+        domains: ['lipsum.app',
+            'cdn.emegen.com.tr'
+        ],
     },
 };
 
