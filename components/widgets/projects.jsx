@@ -6,10 +6,10 @@ export default function ProjectGallery({ initialData = [] }) {
       <>
          <div className="">
             <h4 className="text-3xl font-bold mb-4">Projeler</h4>
-            <ul className="w-full flex flex-col sm:flex-row gap-4 overflow-x-auto py-4">
+            <ul className="w-full flex flex-col sm:flex-row gap-4 overflow-x-auto ">
                {initialData.map((project, i) => (
                   <li
-                     className="group min-w-80 sm:w-80 p-4 flex flex-col gap-2 "
+                     className="group min-w-80 sm:w-80 flex flex-col gap-2 "
                      key={`project-${i}`}>
                      <ProjectGalleryItem project={project} />
                   </li>
@@ -21,7 +21,9 @@ export default function ProjectGallery({ initialData = [] }) {
 }
 
 export const ProjectGalleryItem = ({ project = {} }) => (
-   <Link href={`/projects/${project._id}`} className="flex flex-col gap-2 bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ease-out cursor-pointer">
+   <Link
+      href={`/projects/${project._id}`}
+      className="flex flex-col gap-2 bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ease-out cursor-pointer">
       <div className="overflow-hidden rounded-lg">
          <Image
             src={`http://cdn.emegen.com.tr/${project.files[0].name}`}
