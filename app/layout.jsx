@@ -22,7 +22,7 @@ export const metadata = {
       default:
          "Alpaslan Buğday İnşaat - Kalite, Güven ve Yenilikçilikle Geleceği İnşa Ediyoruz.",
    },
-      
+
    icons: {
       icon: "/favicon.ico",
    },
@@ -33,12 +33,11 @@ export default function RootLayout({ children }) {
 
    return (
       <html lang="tr">
-         <body className={`${geistSans.variable} ${geistMono.variable}  `}>
-            <section className="h-full flex flex-col">
-               <Header />
-               <main className="flex-1 p-4">{children}</main>
-               <Footer />
-            </section>
+         <body
+            className={`${geistSans.variable} ${geistMono.variable} h-full flex flex-col `}>
+            <Header />
+            <section className="flex-1 p-4">{children}</section>
+            <Footer />
          </body>
       </html>
    );
