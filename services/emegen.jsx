@@ -8,5 +8,5 @@ export const getProjects = async () =>
 
 export const getProjectById = async (id) =>
    axios.get(
-      `https://api.emegen.com.tr/users/alpaslan-bugday-insaat/tenders/${id}`
+      `https://api.emegen.com.tr/tenders/${id}`
    );
