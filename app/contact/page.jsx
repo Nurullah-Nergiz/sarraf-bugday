@@ -14,7 +14,7 @@ export default function Contact() {
 
             <div className="grid gap-6 lg:grid-cols-2">
                <div className="space-y-6">
-                   {/* İletişim Bilgileri  */}
+                  {/* İletişim Bilgileri  */}
                   <div className="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
                      <h2 className="mb-4 text-lg font-semibold">
                         İletişim Bilgileri
@@ -103,6 +103,13 @@ export default function Contact() {
 }
 
 export const metadata = {
+   metadataBase: new URL(
+      process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+   ),
    title: "İletişim",
-   description: "Bizimle iletişime geçin",
+   description: "Ekibimizle iletişime geçin, sorularınızı iletin.",
+   keywords: ["iletişim", "sosyal medya", "konum", "telefon", "e-posta"],
+   alternate: {
+      canonical: "/contact",
+   },
 };

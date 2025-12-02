@@ -2,7 +2,6 @@ import TextType from "@/components/animations/text-type";
 import ProjectGallery from "@/components/widgets/projects";
 import ServiceList from "@/components/widgets/services";
 import { getProjects, getServices } from "@/services/emegen";
-import Image from "next/image";
 
 export default async function Home() {
    const [
@@ -65,3 +64,19 @@ export default async function Home() {
       </section>
    );
 }
+
+export const metadata = {
+   title: "Ana Sayfa",
+   description:
+      "Alpaslan Buğday İnşaat, modern mimari ve yüksek yaşam standartlarına sahip lüks konut projeleri geliştiren lider bir inşaat firmasıdır.",
+   keywords: [
+      "Alpaslan Buğday İnşaat",
+      "inşaat",
+      "lüks yaşam alanları",
+      "konut projeleri",
+      "inşa",
+   ],
+   alternate: {
+      canonical: "/",
+   },
+};

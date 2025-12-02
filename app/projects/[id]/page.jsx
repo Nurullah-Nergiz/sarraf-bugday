@@ -210,3 +210,23 @@ export default async function IdPage({ params }) {
       </section>
    );
 }
+
+export async function generateMetadata({ params }) {
+   const { id } = await params;
+
+   return {
+      metadataBase: new URL(
+         process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+      ),
+      title: `Proje Detayları - ${id}`,
+      description: `Detaylı bilgi için lütfen bizimle iletişime geçin.`,
+      keywords: [
+         "alpaslan buğday i̇nşaat",
+         "alpaslan buğday i̇nşaat projeler",
+         `proje ${id}`,
+      ],
+      alternate: {
+         canonical: `/projects/${id}`,
+      },
+   };
+}

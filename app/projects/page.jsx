@@ -9,10 +9,10 @@ export default async function Projects() {
    return (
       <section className="container mx-auto p-6 max-w-5xl">
          <h1 className="text-4xl font-extrabold mb-6">Projelerimiz</h1>
-         <p className="text-lg text-gray-700 mb-8">
+         <h2 className="text-lg text-gray-700 mb-8">
             Devam eden ve tamamlanan çalışmalarımızdan bir seçki. Detaylı bilgi
             için lütfen bizimle iletişime geçin.
-         </p>
+         </h2>
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {projectsList.data.length > 0 ? (
                projectsList.data.map((p, i) => {
@@ -37,3 +37,15 @@ export default async function Projects() {
       </section>
    );
 }
+
+export const metadata = {
+   metadataBase: new URL(
+      process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+   ),
+   title: "Projelerimiz",
+   description: "",
+   keywords: ["alpaslan buğday i̇nşaat", "alpaslan buğday i̇nşaat projeler"],
+   alternate: {
+      canonical: "/projects",
+   },
+};
