@@ -1,7 +1,7 @@
 import { getProjects } from "@/services/emegen";
 
 export default async function sitemap() {
-   const baseUrl = "https://sarraf-bugday.vercel.app";
+   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
    const defaultSitemap = [
       {
          url: `${baseUrl}/`,
